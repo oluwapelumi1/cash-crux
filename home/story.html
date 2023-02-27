@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>CASH CRUX</title>
+</head>
+<style>
+    :root {
+        --primary: #0d6efd;
+        --dark: #21252f;
+        --body: #888;
+        --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+
+
+    #wrapper {
+        padding-left: 0;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        overflow: hidden;
+    }
+
+
+
+    #sidebar-wrapper {
+        z-index: 1000;
+        position: absolute;
+        left: 250px;
+        width: 0;
+        height: 100%;
+        margin-left: -240px;
+        overflow-y: auto;
+        background: #000;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #page-content-wrapper {
+        position: absolute;
+        padding: 15px;
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
+
+
+
+    /* Sidebar Styles */
+
+    .sidebar-nav {
+        position: absolute;
+        top: 0;
+        width: 200px;
+        height: 1500px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 2px;
+    }
+
+    .sidebar-nav li {
+        text-indent: 15px;
+        line-height: 40px;
+        padding-bottom: 20px;
+
+    }
+
+    .sidebar-nav li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: #FC5801;
+        background: rgba(255, 255, 255, 0.2);
+        border-left: red 2px solid;
+    }
+
+    .sidebar-nav li a:active,
+    .sidebar-nav li a:focus {
+        text-decoration: none;
+    }
+
+    .sidebar-nav>.sidebar-brand {
+        height: 65px;
+        font-size: 18px;
+        line-height: 60px;
+    }
+
+    .sidebar-nav>.sidebar-brand a {
+        color: #999999;
+    }
+
+    .sidebar-nav>.sidebar-brand a:hover {
+        color: #fff;
+        background: none;
+    }
+
+    .no-margin {
+        margin: 0;
+    }
+
+    @media (min-width: 768px) {
+        #wrapper {
+            padding-left: 250px;
+        }
+
+        .fixed-brand {
+            width: 250px;
+        }
+
+        #wrapper.toggled {
+            padding-left: 0;
+        }
+
+        #sidebar-wrapper {
+            width: 250px;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            width: 250px;
+        }
+
+        #wrapper.toggled-2 #sidebar-wrapper {
+            width: 50px;
+        }
+
+        #wrapper.toggled-2 #sidebar-wrapper:hover {
+            width: 250px;
+        }
+
+        #page-content-wrapper {
+            padding: 20px;
+            position: relative;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        #wrapper.toggled #page-content-wrapper {
+            position: relative;
+            margin-right: 0;
+            padding-left: 250px;
+        }
+
+        #wrapper.toggled-2 #page-content-wrapper {
+            position: relative;
+            margin-right: 0;
+            margin-left: -200px;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            width: auto;
+        }
+    }
+</style>
+
+<body>
+
+
+
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav-pills nav-stacked pt-2" id="menu">
+                <li class=" pb-5 mb-3 ms-5">
+
+                    <img src="../img/CASH CRUX.png" alt="">
+                    <ul>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="ms-1 text-xlg  pb-5 mb-5"></span> Story
+                        <i class="bi bi-trash3 ms-5 ps-3"></i>
+                        <i class="bi bi-gear"></i>
+                    </a>
+
+                </li>
+
+                <li>
+                    <a href="#"><span class="ms-3 text-xlg pexels-dani-mota-2040356  pb-5 mb-5"></span>Your Story
+                    </a>
+
+                </li>
+                <div class="d-flex">
+                    <div class="img ms-2 "><img src="../blog/lara-2-7918 3 (1).png " style="border-radius: 200px;">
+
+                    </div>
+                    <p class="text-white ms-2 text-sm">Sarah Moses <i class="bi bi-plus-square ms-4"></i> <br><span
+                            style="font-size: 12px; color: #888;">
+                            12hrs ago</span>
+
+                    </p>
+                </div>
+
+                <li class="mt-5">
+                    <a href="#"><span class="ms-3 text-xlg mt-5  pb-5 mb-5"></span>All Stories
+                    </a>
+
+                </li>
+                <div class="d-flex mb-3">
+                    <div class="img ms-2 "><img src="../blog/lara-2-7918 3 (1).png " style="border-radius: 200px;">
+
+                    </div>
+                    <p class="text-white ms-2 text-sm">Sarah Moses </i> <br><span style="font-size: 12px; color: #888;">
+                            12hrs ago</span>
+
+                    </p>
+                </div>
+                <div class="d-flex mb-5">
+                    <div class="img ms-2 "><img src="../blog/lara-2-7918 3 (1).png " style="border-radius: 200px;">
+
+                    </div>
+                    <p class="text-white ms-2 text-sm">Sarah Moses <br><span style="font-size: 12px; color: #888;">
+                            12hrs ago</span>
+
+                    </p>
+                </div>
+
+
+
+
+
+
+
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper bg-dark">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <div class="dropdown d-flex me-3"><a class="pt-3 me-4  ms-auto" href="#" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-envelope pt-3" style="
+                        color: #fc5801;"></i> </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+
+                            <div class="dropdown d-flex"><a class="pt-3 me-2" href="#" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-bell pt-3" style="
+                        color: #fc5801;"></i> </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+
+
+
+                                <div class="img ms-4 "><img src="../blog/lara-2-7918 3 (1).png " width="100%"
+                                        style="border-radius: 100%; ;">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <!--  -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+        <div class="img  ms-5 ps-5 position-relative">
+            <div class="btn btn-secondary position-absolute " style="margin-top: 550px;">256 Viewers</div>
+            <img src="../im/Rectangle 5.png" class="pb-5" width="30%">
+
+        </div>
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+        $("#menu-toggle-2").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled-2");
+            $('#menu ul').hide();
+        });
+
+        function initMenu() {
+            $('#menu ul').hide();
+            $('#menu ul').children('.current').parent().show();
+            //$('#menu ul:first').show();
+            $('#menu li a').click(
+                function () {
+                    var checkElement = $(this).next();
+                    if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+                        return false;
+                    }
+                    if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+                        $('#menu ul:visible').slideUp('normal');
+                        checkElement.slideDown('normal');
+                        return false;
+                    }
+                }
+            );
+        }
+        $(document).ready(function () {
+            initMenu();
+        });
+
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
